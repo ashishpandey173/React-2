@@ -1,0 +1,52 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.display {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.keypad {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+  grid-template-rows: repeat(5, 1fr); /* Create 5 rows */
+  gap: 1px; /* Add some gap between keys */
+}
+
+.keypad button {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.keypad button:nth-child(1n), .keypad button:nth-child(2n), .keypad button:nth-child(3n) {
+  background-color: #f0f0f0;
+}
+
+
+.keypad button:nth-child(4n) {
+  background-color: #ff9900;
+}
+
+.keypad button:hover {
+  background-color: #ccc;
+}
